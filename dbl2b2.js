@@ -46,9 +46,12 @@ function doubleToBase2String(n) {
   }
   str = str.substr(0, nz+1)
   if(str.length > 1) {
-    str = "1." + str.substr(1) + "*"
+    str = (sign ? "-" : "") + "1." + str.substr(1)
+    if(exponent) {
+      str += "*2^" + exponent
+    }
   } else {
-    str = ""
+    str = (sign ? "-" : "") + "2^" + exponent
   }
-  return (sign ? "-" : "") + str + "2^" + exponent
+  return str
 }

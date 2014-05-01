@@ -17,6 +17,7 @@ tape("double-to-base-2-string", function(t) {
   t.equals(b2str(-2), "-2")
 
   //Generic values
+  t.equals(b2str(1.5), "1.1")
   t.equals(b2str(8), "2^3")
   t.equals(b2str(7), "1.11*2^2")
   t.equals(b2str(-4), "-2^2")
