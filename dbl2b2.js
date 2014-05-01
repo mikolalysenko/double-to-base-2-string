@@ -24,10 +24,6 @@ function doubleToBase2String(n) {
     return "1"
   } else if(n === -1) {
     return "-1"
-  } else if(n === 2) {
-    return "2"
-  } else if(n === -2) {
-    return "-2"
   }
   var exponent = db.exponent(n)
   var fraction = db.fraction(n)
@@ -48,10 +44,17 @@ function doubleToBase2String(n) {
   if(str.length > 1) {
     str = (sign ? "-" : "") + "1." + str.substr(1)
     if(exponent) {
-      str += "*2^" + exponent
+      if(exponent === 1) {
+        str += "*2"
+      } else {
+        str += "*2^" + exponent
+      }
     }
   } else {
-    str = (sign ? "-" : "") + "2^" + exponent
+    str = (sign ? "-" : "") + "2"
+    if(exponent !== 1) {
+      str += "^" + exponent
+    }
   }
   return str
 }

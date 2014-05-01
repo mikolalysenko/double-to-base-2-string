@@ -1,6 +1,6 @@
 {
   "name": "double-to-base-2-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Turn a number into a human readable binary string",
   "main": "dbl2b2.js",
   "directories": {
