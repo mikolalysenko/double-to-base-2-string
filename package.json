@@ -1,0 +1,40 @@
+{
+  "name": "double-to-base-2-string",
+  "version": "1.0.0",
+  "description": "Turn a number into a human readable binary string",
+  "main": "dbl2b2.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "double-bits": "^1.1.0",
+    "pad": "0.0.4"
+  },
+  "devDependencies": {
+    "tape": "^2.12.3"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/double-to-base-2-string.git"
+  },
+  "keywords": [
+    "double",
+    "binary",
+    "string",
+    "representation",
+    "base",
+    "2",
+    "radix",
+    "denormalized",
+    "bits"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/double-to-base-2-string/issues"
+  },
+  "homepage": "https://github.com/mikolalysenko/double-to-base-2-string"
+}
